@@ -14,6 +14,6 @@ x = y
 y = z
 z = aux
 
-print("El valor de x es: ", x)
-print("El valor de y es: ", y)
-print("El valor de z es: ", z)
+print("El valor de x es:", x)
+print("El valor de y es:", y)
+print("El valor de z es:", z)

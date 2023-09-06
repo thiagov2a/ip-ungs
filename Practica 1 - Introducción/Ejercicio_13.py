@@ -7,4 +7,4 @@ meses = int(input("Ingrese la cantidad de meses: "))
 
 resultado = capital + (capital * 0.06) * meses
 
-print("El capital final es: $", resultado)
+print("El capital final es:", resultado)

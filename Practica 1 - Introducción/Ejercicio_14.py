@@ -8,4 +8,4 @@ segundos = int(input("Ingrese la cantidad de segundos de comunicación: "))
 
 importe = (llamadas * 12) + (segundos * 1.5)
 
-print("El importe a pagar es: $", importe)
+print("El importe a pagar es:", importe)

@@ -13,4 +13,4 @@ comision = (venta_1 + venta_2 + venta_3) * 0.1
 
 sueldo_final = sueldo_base + comision
 
-print("El sueldo final del vendedor es de: ", sueldo_final)
+print("El sueldo final del vendedor es de:", sueldo_final)

@@ -10,5 +10,5 @@ aux = x
 x = y
 y = aux
 
-print("El valor de x es: ", x)
-print("El valor de y es: ", y)
+print("El valor de x es:", x)
+print("El valor de y es:", y)

@@ -22,7 +22,7 @@ horas = segundos / 3600
 
 dias = segundos / 86400
 
-print("La cantidad de segundos ingresada es: ", segundos)
-print("La cantidad de minutos ingresada es: ", minutos)
-print("La cantidad de horas ingresada es: ", horas)
-print("La cantidad de dias ingresada es: ", dias)
+print("La cantidad de segundos ingresada es:", segundos)
+print("La cantidad de minutos ingresada es:", minutos)
+print("La cantidad de horas ingresada es:", horas)
+print("La cantidad de dias ingresada es:", dias)

@@ -3,7 +3,6 @@
 # valores de las variables y mostrarlos de mayor a menor.
 num1 = int(input("Ingrese un valor: "))
 num2 = int(input("Ingrese otro valor: "))
-aux = 0
 
 if num1 < num2:
     aux = num1

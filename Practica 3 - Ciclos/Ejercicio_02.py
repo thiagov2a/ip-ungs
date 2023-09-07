@@ -13,7 +13,11 @@ m = int(input("Ingrese un número: "))
 n = int(input("Ingrese otro número: "))
 
 if n < m:
-    print("n es menor que m")
+    for i in range(m, n - 1, -1):
+        if i == n:
+            print(i)
+        else:
+            print(i, end=", ")
 else:
     for i in range(m, n + 1):
         if i == n:

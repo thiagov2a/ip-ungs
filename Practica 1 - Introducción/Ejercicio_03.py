@@ -9,4 +9,4 @@ resultado = x + y
 m = int(input("Ingrese el primer valor: "))
 n = int(input("Ingrese el segundo valor: "))
 
-print("El resultado de la suma es: ", m + n)
+print("El resultado de la suma es:", m + n)

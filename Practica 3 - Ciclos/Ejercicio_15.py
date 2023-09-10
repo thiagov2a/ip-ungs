@@ -8,6 +8,7 @@ suma = 0
 for i in range(1, n + 1):
     suma += 2 * i
     print(suma, end=" ")
+
 print()
 
 # b) Idem anterior para la sucesión an = n^2.
@@ -18,6 +19,7 @@ suma = 0
 for i in range(1, n + 1):
     suma += i**2
     print(suma, end=" ")
+
 print()
 
 # c) Idem anterior para la sucesión an = n^3 − n^2.
@@ -28,6 +30,7 @@ suma = 0
 for i in range(1, n + 1):
     suma += i**3 - i**2
     print(suma, end=" ")
+
 print()
 
 # d) Idem anterior para la sucesión an = 1/n^2.
@@ -38,6 +41,7 @@ suma = 0
 for i in range(1, n + 1):
     suma += 1 / (i**2)
     print(suma, end=" ")
+
 print()
 
 # e) ¿A qué valor se va acercando la suma del inciso anterior a medida que utilizamos

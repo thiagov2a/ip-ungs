@@ -17,7 +17,6 @@
 # Ejercicio 1
 # a.
 sensor = 0
-
 sensor == 0 or (sensor > 9 and sensor < 21)
 
 # Sol = {0}U(9, 21)
@@ -80,6 +79,7 @@ for i in range(10, numero + 1):  # 50
         contador += 1  # 70
         print(i)  # 80
 print("Cantidad de números que cumplen la guarda:", contador)  # 90
+
 # En caso de querer contar la cantidad de números que cumplen con la condición, agregamos
 # las líneas 40, 70 y 90. En primer lugar, instanciamos un contador en cero; luego,
 # le sumamos 1 al contador en caso de que la condición en la línea 60 se cumpla; finalmente,
@@ -135,4 +135,47 @@ print(len("1er Parcial"))
 
 # d.
 print("$+#" * 3)
+# Observación: La operación * 3 indica que la cadena "$+#" se repetirá tres veces consecutivas.
 
+# El programa imprimirá $+#$+#$+#
+
+# Ejercicio 5
+cadena_1 = input("Ingrese una palabra: ")
+cadena_2 = input("Ingrese otra palabra: ")
+cadena_nueva = ""
+
+contador = 1
+for char in cadena_1:
+    if contador % 2 != 0:  # Concición impar
+        cadena_nueva += char
+    contador += 1
+
+contador = 1
+for char in cadena_2:
+    if contador % 2 == 0:  # Concición par
+        cadena_nueva += char
+    contador += 1
+
+print("La nueva cadena es", cadena_nueva)
+
+# Ejercicio 6
+numero = int(input("Ingrese un número: "))
+suma = 0
+contador = 0
+
+for divisor in range(1, numero + 1):
+    if numero % divisor == 0:
+        suma += divisor
+        contador += 1
+
+if contador == 2:
+    print("El número", numero, "es primo")
+else:
+    print(
+        "El número",
+        numero,
+        "no es primo ya que tiene",
+        contador,
+        "divisores y la suma de estos es",
+        suma,
+    )

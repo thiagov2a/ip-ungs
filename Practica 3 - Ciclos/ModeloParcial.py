@@ -22,7 +22,7 @@ sensor == 0 or (sensor > 9 and sensor < 21)
 
 # Sol = {0} U (9, 21)
 
-# b. Si se tiene las siguiente variable booleanas:
+# b. Si se tienen las siguientes variables booleanas:
 w = True
 v = False
 z = False
@@ -73,11 +73,11 @@ for i in range(10, numero + 1):  # Línea  40
 # c. Si un usuario ingresa como número un 22, ¿qué escribiría el programa?
 # ¿y si se ingresara 24?
 
-# En caso de que 'numero = 22' el programa imprimirá la siguiente salida:
+# En caso de que numero = 22 el programa imprimirá la siguiente salida:
 # 10
 # 15
 # 20
-# En caso de que 'numero = 24' el programa imprimirá los valores anteriores.
+# En caso de que numero = 24 el programa imprimirá los valores anteriores.
 
 # d. Agregar las líneas de código necesarias al programa para que cuente la cantidad de
 # números que cumplen con la guarda de la línea 50
@@ -124,7 +124,7 @@ for char in color:
 print("Cadena nueva:", cadena_nueva)
 
 # Ejercicio 4
-# ¿Qué imprimen las siguientes líneas de código?
+# ¿Qué imprimiran las siguientes líneas de código?
 
 # a.
 print(3**2 - 3 * 2)

@@ -41,7 +41,7 @@ for i in range(-3, 1):  # [-3, 1)
     valor = valor + i
 print(valor * 2)
 
-# Iteración | valor |  i  | valor = valor + i
+# iteración | valor |  i  | valor = valor + i
 # 1         | 10    | -3  | 10 + (-3) = 7
 # 2         | 7     | -2  | 7 + (-2) = 5
 # 3         | 5     | -1  | 5 + (-1) = 4

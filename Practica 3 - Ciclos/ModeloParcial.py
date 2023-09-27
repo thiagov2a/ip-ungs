@@ -32,6 +32,7 @@ not (w and v) or z
 not (False) or False
 True or False
 True
+
 # La rama que cumple la condición es not(w and v) ya que la compuerta lógica and no
 # se cumple al ser w y v distintos, el False en un not(False) -> True.
 

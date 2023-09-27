@@ -17,7 +17,7 @@
 # Ejercicio 1
 # a. Sabiendo que sensor es una variable de tipo entero:
 sensor = 0
-# Decir para qué valores de la variable sensor es verdadela la siguiente condición:
+# Decir para qué valores de la variable sensor es verdadera la siguiente condición:
 sensor == 0 or (sensor > 9 and sensor < 21)
 
 # Sol = {0} U (9, 21)

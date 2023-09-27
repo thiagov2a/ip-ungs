@@ -81,15 +81,15 @@ for i in range(10, numero + 1):  # Línea  40
 # d. Agregar las líneas de código necesarias al programa para que cuente la cantidad de
 # números que cumplen con la guarda de la línea 50
 
-numero = int(input("Ingrese un número entero mayor o igual a diez: "))  # 10
-while numero < 10:  # 20
-    numero = int(input("Ingrese un número entero mayor o igual a diez:"))  # 30
-contador = 0  # 40
-for i in range(10, numero + 1):  # 50
-    if i % 5 == 0:  # 60
-        contador += 1  # 70 - Incrementa el contador si la condición se cumple
-        print(i)  # 80
-print("Cantidad de números que cumplen la guarda:", contador)  # 90
+numero = int(input("Ingrese un número entero mayor o igual a diez: "))  # Línea 10
+while numero < 10:  # Línea 20
+    numero = int(input("Ingrese un número entero mayor o igual a diez:"))  # Línea 30
+contador = 0  # Línea 40
+for i in range(10, numero + 1):  # Línea 50
+    if i % 5 == 0:  # Línea 60
+        contador += 1  # Línea 70 - Incrementa el contador si la condición se cumple
+        print(i)  # Línea 80
+print("Cantidad de números que cumplen la guarda:", contador)  # Línea 90
 
 # En caso de querer contar la cantidad de números que cumplen con la condición, agregamos
 # las líneas 40, 70 y 90. En primer lugar, instanciamos un contador en cero; luego,

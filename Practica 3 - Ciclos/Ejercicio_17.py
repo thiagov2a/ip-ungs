@@ -5,94 +5,66 @@ import math
 
 # a) Escribir un programa que le pregunte al usuario la cantidad de términos a sumar y
 # que muestre la aproximación de π con esa cantidad de términos.
-terminos = int(input("Ingrese la cantidad de términos para aproximarse a π: "))
+terminos = int(input("Ingrese un número de términos para aproximar a π: "))
 aproximacion = 0
 signo = 1
 
-for n in range(terminos):
-    termino_actual = signo / (2 * n + 1)
-    aproximacion += termino_actual
+for i in range(terminos):
+    aproximacion += signo / (2 * i + 1)
     signo *= -1
 
 aproximacion *= 4
 
-print("π ≈", aproximacion)
-
+print("Aproximación de π =", aproximacion)
 print()
 
 # b) ¿A partir de cuántos términos el valor alcanzado está a menos de 0.1 del valor que
 # da la calculadora?
-epsilon_b = 0.1
-terminos_b = 0
-aproximacion_b = 0
-signo_b = 1
+epsilon = 0.1
+aproximacion = 0
+signo = 1
+terminos = 0
 
-while abs(math.pi - aproximacion_b * 4) >= epsilon_b:
-    termino_actual = signo_b / (2 * terminos_b + 1)
-    aproximacion_b += termino_actual
-    signo_b *= -1
-    terminos_b += 1
+while abs(math.pi - aproximacion * 4) >= epsilon:
+    aproximacion += signo / (2 * terminos + 1)
+    signo *= -1
+    terminos += 1
 
-aproximacion_b *= 4
+aproximacion *= 4
 
-print(
-    "Se necesitan al menos",
-    terminos_b // 2,
-    "términos para estar a menos de",
-    epsilon_b,
-    "de π.",
-)
-print("π ≈", aproximacion_b)
-
+print("Aproximación de π =", aproximacion, "con", terminos, "términos")
 print()
 
 # c) ¿A partir de cuántos términos el valor alcanzado está a menos de 0.01 del valor que
 # da la calculadora?
-epsilon_c = 0.01
-terminos_c = 0
-aproximacion_c = 0
-signo_c = 1
+epsilon = 0.01
+aproximacion = 0
+signo = 1
+terminos = 0
 
-while abs(math.pi - aproximacion_c * 4) >= epsilon_c:
-    termino_actual = signo_c / (2 * terminos_c + 1)
-    aproximacion_c += termino_actual
-    signo_c *= -1
-    terminos_c += 1
+while abs(math.pi - aproximacion * 4) >= epsilon:
+    aproximacion += signo / (2 * terminos + 1)
+    signo *= -1
+    terminos += 1
 
-aproximacion_c *= 4
+aproximacion *= 4
 
-print(
-    "Se necesitan al menos",
-    terminos_c // 2,
-    "términos para estar a menos de",
-    epsilon_c,
-    "de π.",
-)
-print("π ≈", aproximacion_c)
-
+print("Aproximación de π =", aproximacion, "con", terminos, "términos")
 print()
 
 # d) Modificar el programa para que en lugar de pedir la cantidad de términos a sumar,
 # pida al usuario un número decimal ε (muy chico) y calcule la suma hasta que el
 # error comparado con el valor de la calculadora sea menor que ε
-epsilon_d = float(input("Ingrese el valor de ε (muy pequeño): "))
-terminos_d = 0
-aproximacion_d = 0
-signo_d = 1
+epsilon = float(input("Ingrese el valor de ε (muy pequeño) para aproximar a π: "))
+aproximacion = 0
+signo = 1
+terminos = 0
 
-while abs(math.pi - aproximacion_d * 4) >= epsilon_d:
-    termino_actual = signo_d / (2 * terminos_d + 1)
-    aproximacion_d += termino_actual
-    signo_d *= -1
-    terminos_d += 1
+while abs(math.pi - aproximacion * 4) >= epsilon:
+    aproximacion += signo / (2 * terminos + 1)
+    signo *= -1
+    terminos += 1
 
-aproximacion_d *= 4
+aproximacion *= 4
 
-print(
-    "Se necesitan al menos",
-    terminos_d // 2,
-    "términos para estar a menos de",
-    epsilon_d,
-    "de π.",
-)
-print("π ≈", aproximacion_d)
+print("Aproximación de π =", aproximacion, "con", terminos, "términos")

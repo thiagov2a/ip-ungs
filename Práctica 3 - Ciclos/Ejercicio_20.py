@@ -17,7 +17,12 @@ for i in range(m, n + 1):
     for j in range(m, n + 1):
         print(i, j)
 
+print()
+
 # b) Cambiar el programa para que use sólo un ciclo en vez de dos.
+m = int(input("Ingrese un número: "))
+n = int(input("Ingrese otro número: "))
+
 diferencia = abs(m - n) + 1
 vueltas = diferencia**2
 aux = m

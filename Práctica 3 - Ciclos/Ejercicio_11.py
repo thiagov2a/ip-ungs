@@ -49,7 +49,7 @@ for i in range(1, n + 1):
 # f) Hacer un programa que permita al usuario elegir dos números positivos c y n y luego
 # muestre en pantalla los últimos c divisores de n.
 n = int(input("Ingrese un número positivo: "))
-c = int(input("Ingrese la cantidad de los ultimos divisores a obtener: "))
+c = int(input("Ingrese la cantidad de los últimos divisores a obtener: "))
 
 for i in range(n, 0, -1):
     if n % i == 0 and c != 0:

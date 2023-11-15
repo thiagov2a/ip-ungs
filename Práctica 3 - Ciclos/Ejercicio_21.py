@@ -19,3 +19,24 @@ for i in range(m, n + 1):
 print()
 
 # b) Cambiar el programa para que use sólo un ciclo en vez de dos.
+m = int(input("Ingrese un número: "))
+n = int(input("Ingrese otro número: "))
+
+diferencia = abs(m - n) + 1
+aux = m
+n = aux
+
+i = 0
+while diferencia != 0:
+    if i == diferencia:
+        m += 1
+        n = aux
+        diferencia -= 1
+        i = 0
+        if diferencia == 1:
+            n = m
+        if diferencia == 0:
+            break
+    print(m, n)
+    n += 1
+    i += 1
